@@ -20,14 +20,15 @@
   min-height: 100vh;
 }
 
-.home-page button{
-  background-color: #ec2caf;
+.modal-button {
+  background-color: #ec2cc2b8;
   color: white;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.2rem;
+  height: 6vh;
+  width: 12vh;
 }
 
 .modal-content {
@@ -74,7 +75,7 @@
 .modal-email-icon {
   position: absolute;
   left: 40px;
-  top: 45%;
+  top: 42%;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
@@ -84,15 +85,24 @@
 .modal-password-icon {
   position: absolute;
   left: 40px;
-  top: 63%;
+  top: 60%;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
   color: #FFF;
 }
 
+.modal-button-back{
+  font-size: 0.60rem;
+  color: #ffffffe0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+  margin-top: 15px;
+}
+
 /* Estilos para Tablets e Dispositivos Maiores */
-@media (min-width: 600px) {
+@media (min-width: 600px)  and (max-width: 1023px) {
   .modal-content{
     min-width: 50vh;
   }
@@ -107,21 +117,24 @@
   .modal-email-icon {
     width: 28px;
     height: 28px;
-    left: 53px;
-    top: 47%;
+    left: 55px;
+    top: 45%;
   }
 
   .modal-password-icon{
     width: 28px;
     height: 28px;
-    left: 53px;
-    top: 64%;
+    left: 55px;
+    top: 61%
   }
 
-  .home-page button {
+  .modal-button {
     font-size: 1.75rem;
     height: 70px;
-    width: 115px;
+    width: 150px;
+  }
+  .modal-button-back {
+    font-size: 0.75rem;
   }
 }
 
@@ -130,15 +143,24 @@
   .modal-input {
     height: 50px;
     font-size: 20px;
+    padding-left: 50px;
+    width: 80%;
   }
 
   .modal-email-icon {
     width: 32px;
     height: 32px;
+    top: 259px;
+    left: 59px;
   }
   .modal-password-icon{
     width: 32px;
     height: 32px;
-    top: 349px;
+    top: 340px;
+    left: 59px;
+  }
+
+  .modal-button-back{
+    font-size: 0.75rem;
   }
 }

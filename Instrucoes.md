@@ -60,11 +60,11 @@ Desenvolver uma aplicação web em ReactJS que permita aos usuários fazer login
         [ ] O usuário é redirecionado para a Tela de Perfil de Usuário sem salvar mudanças    
 
 ## 2- INTERFACE DO USUÁRIO - HTML + CSS
-[ ] mobile first, estilizando a page com css e obtendo um design responsivo
-[ ] page de login com os seguintes elementos:
-    [ ] campo de email
-    [ ] campo de senha
-    [ ] botão de login
+[X] mobile first, estilizando a page com css e obtendo um design responsivo
+[X] page de login com os seguintes elementos:
+    [X] campo de email
+    [X] campo de senha
+    [X] botão de login
 [ ] page de perfil com os seguintes elementos:
     [ ] campo de nome
     [ ] campo de email 
