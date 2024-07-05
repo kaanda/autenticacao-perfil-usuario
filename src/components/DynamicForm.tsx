@@ -1,8 +1,9 @@
-import React from 'react';
-import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
+import { Formik, Form, ErrorMessage, FormikHelpers } from "formik";
 import * as Yup from "yup";
 import DynamicInput from "./DynamicInput";
 import DynamicButton from './DynamicButton';
+import '../styles/Modal/Modal.css';
+import '../styles/Form/Form.css';
 
 interface DynamicFormProps {
   formConfig: any;
@@ -27,7 +28,7 @@ const DynamicForm = ({ formConfig, initialValues, onSubmit } : DynamicFormProps)
 
                 {field.type === "input" ? (
                   <DynamicInput 
-                    className={`modal-input ${errors[field.name] && touched[field.name] ? 'modal-input-error' : ''} 
+                    className={`form-input ${errors[field.name] && touched[field.name] ? 'form-input-error' : ''} 
                               ${index === 0 ? 'autofocus' : ''}`
                               } 
                     {...field} 
@@ -35,7 +36,7 @@ const DynamicForm = ({ formConfig, initialValues, onSubmit } : DynamicFormProps)
                   />
                 ) : null}
 
-                <ErrorMessage className='field-error' name={field.name} component="div" />
+                <ErrorMessage className='form-field-error' name={field.name} component="div" />
 
               </div>
             ))}

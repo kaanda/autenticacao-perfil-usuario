@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import DynamicForm from "../components/DynamicForm";
 import * as Yup from "yup";
 import DynamicButton from "../components/DynamicButton";
+import '../styles/Modal/Modal.css'
+import '../styles/Form/Form.css'
 
 
 const FormLogin = () => {
@@ -63,7 +65,7 @@ const handleCloseModal = () => {
                 viewBox="0 0 24 24" 
                 strokeWidth={1.5} 
                 stroke="currentColor" 
-                className="modal-person-icon"
+                className="form-person-icon"
             >
                 <path 
                     strokeLinecap="round" 
@@ -82,7 +84,7 @@ const handleCloseModal = () => {
                 viewBox="0 0 24 24" 
                 strokeWidth={1.5} 
                 stroke="currentColor" 
-                className="modal-email-icon"
+                className="form-email-icon"
             >
                 <path 
                     strokeLinecap="round" 
@@ -96,7 +98,7 @@ const handleCloseModal = () => {
                 viewBox="0 0 24 24" 
                 strokeWidth={1.5} 
                 stroke="currentColor" 
-                className="modal-password-icon"
+                className="form-password-icon"
             >
                 <path 
                     strokeLinecap="round" 

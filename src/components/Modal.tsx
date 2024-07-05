@@ -1,3 +1,4 @@
+import '../styles/Modal/Modal.css';
 import React from 'react';
 
 interface ModalProps {

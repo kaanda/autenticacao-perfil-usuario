@@ -1,0 +1,71 @@
+/* Estilos para Mobile */
+.modal-login{
+    position: relative;
+    display: inline-block;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 45vh;
+    min-height: 60vh;
+    padding: 15px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgb(63, 94, 251);
+    background: linear-gradient(23deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 0.6727065826330532) 100%);
+  }
+
+  .modal-button {
+    background-color: #ec2cc2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 6vh;
+    width: 12vh;
+    margin: 5px 0;
+  }
+  
+  .modal-button-back{
+    font-size: 0.60rem;
+    color: #ffffffe0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px;
+    margin-top: 7px;
+  }
+
+  
+/* Estilos para Tablets e Dispositivos Maiores */
+@media (min-width: 600px)  and (max-width: 1023px) {
+
+    .modal-content{
+        min-width: 50vh;
+    }
+
+    .modal-button {
+        font-size: 1.75rem;
+        height: 70px;
+        width: 150px;
+    }
+
+    .modal-button-back {
+        font-size: 0.75rem;
+    }
+}
+
+/* Estilos para Desktops */
+@media (min-width: 1024px) {
+
+    .modal-button-back{
+        font-size: 0.75rem;
+    }
+
+    .modal-button {
+        margin-top: 15px;
+    }
+}
