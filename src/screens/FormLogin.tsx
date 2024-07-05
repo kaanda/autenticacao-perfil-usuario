@@ -23,12 +23,12 @@ const FormLogin = () => {
         type: "input",
         inputType: "password",
         component: "input",
-        placeholder: "Password"
+        placeholder: "Senha"
       }
     ],
     validationSchema: {
         email: Yup.string().email("E-mail inválido").required("E-mail é obrigatório"),
-        password: Yup.string().required("Senha é obrigatória")
+        password: Yup.string().required("Senha é obrigatória").min(6, "A senha deve ter pelo menos 6 caracteres")
     }
   };
 

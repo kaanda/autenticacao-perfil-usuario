@@ -111,4 +111,8 @@
         top: 334px;
         left: 70px;
     }
+
+    .form-field-error{
+        font-size: 1rem;
+    }
 }
