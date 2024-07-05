@@ -1,9 +1,9 @@
-import ModalLogin from "../components/ModalLogin";
+import FormLogin from "./FormLogin";
 
 export default function HomePage() {
   return (
     <div className="home-page">
-      <ModalLogin />
+      <FormLogin />
     </div>
   );
 }
